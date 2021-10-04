@@ -13,9 +13,7 @@ def index():
             if not first_line:
                 leaderboard.append({
                     "name": row[0],
-                    "track1": row[1],
-                    "track2": row[2],
-                    "tracktotal": int(row[1]) + int(row[2])
+                    "tracktotal": int(row[1])
                 })
             else:
                 first_line = False
