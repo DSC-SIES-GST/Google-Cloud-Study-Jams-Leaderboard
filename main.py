@@ -20,5 +20,9 @@ def index():
     leaderboard.sort(key=lambda x: x['tracktotal'], reverse=True)
     return render_template("index.html", leaderboard=leaderboard)
 
+@app.route('/login')
+def login():
+    return render_template("login.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
