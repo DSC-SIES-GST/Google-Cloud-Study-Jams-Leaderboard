@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSC SIES GST - 30 Days of Google Cloud Leaderboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../static/images/dsc_siesgst_logo.png">
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .footer {
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .footer a {
+            color: black !important;
+        }
+
+        .flinks:hover {
+
+            transition: all .2s ease-in;
+            transform: scale(1.02);
+            box-shadow: 2px 2px 12px darkseagreen, -1px -1px 8px darkseagreen;
+            border-radius: 2rem;
+        }
+
+        .nav-link.active p {
+            margin: 0%;
+        }
+
+        .flinks-2:hover {
+            color: rgb(74, 113, 230) !important;
+        }
+
+        /* navbar icons styling */
+
+        .socialmedia img {
+            filter: grayscale(100);
+        }
+
+        .socialmedia img:hover {
+            filter: grayscale(0);
+            transition: 0.5s;
+        }
+
+        .rounded {
+            border-radius: 8px !important;
+            padding: 20px;
+            background-color: #222222d7;
+
+        }
+
+        /* navbar icons styling ends */
+    </style>
+
+    <script>
+        var message = '{{ unsuccesful }}';
+        if (message != "") {
+            alert(message);
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <div class="container-fluid">
+
+            <!-- this contains logo and button design -->
+            <a class="navbar-brand" href="#">
+                <img src="../static/images/dsc_siesgst_logo.png" height="45" alt="">
+                DSC SIES GST
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- this contains navbar links  -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto text-center socialmedia">
+                    <a class="nav-link active" aria-current="page" href="https://bit.ly/GDSCSIESGSTDiscord"
+                        target="_blank">
+                        <img src="../static/images/dc-removebg-preview.png" height="30px">
+                    </a>
+                    <a class="nav-link active" href="https://bit.ly/GDSCSIESGSTWhatsApp" target="_blank">
+                        <img src="../static/images/whatsapp-removebg-preview.png" height="30px">
+                    </a>
+                    <a class="nav-link active" href="https://bit.ly/GDSCSIESGSTLinkedIn" target="_blank">
+                        <img src="../static/images/linked-in-removebg-preview (1).png" height="30px">
+                    </a>
+                    <a class="nav-link active" href="https://bit.ly/GDSCSIESGSTYouTube" target="_blank">
+                        <img src="../static/images/yt-removebg-preview.png" height="30px">
+                    </a>
+                    <a class="nav-link active" href="https://bit.ly/GDSCSIESGSTInstagram" target="_blank">
+                        <img src="../static/images/Instagram-logo-transparent-PNG-removebg-preview.png" height="30px">
+                    </a>
+                    <a class="nav-link active" href="https://bit.ly/GDSCSIESGSTCommunityPage" target="_blank">
+                        <img src="../static/images/dsc.png" height="20" alt="" height="30px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="min-height: 80vh; position: relative;display: flex;align-items: center;" class="pt-5 text-white">
+        <div class="container mt-5 py-4 shadow rounded" style="max-width: 500px;">
+            <h2>
+                30 Days of Google Cloud Login
+            </h2>
+            <form action="/login" method="POST">
+                <div class="form-group mt-3">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary mt-4">Login</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer" style="height: auto;">
+        <div class="container" style="height: auto;">
+            <p style="text-align:center; font-size: 20px; font-weight: 600;">Quick Access</p>
+
+            <!-- this division contents the link that can be accessed in footer -->
+            <div class="d-flex justify-content-center align-items-center flex-wrap" style="height: auto;">
+                <a class="nav-link active flinks" aria-current="page"
+                    href="https://developers.google.com/community/gdsc" target="_blank">
+                    <p style="font-size:15px; font-weight: 600; color: #222222;" class="flinks-2">GDSC</p>
+                </a>
+                <a class="nav-link active flinks"
+                    href="https://events.withgoogle.com/30daysofgooglecloud/program-syllabus/#content" target="_blank">
+                    <p style="font-size:15px;  font-weight: 600; color: #222222;" class="flinks-2">TRACKS</p>
+                </a>
+                <a class="nav-link active flinks" href="https://www.qwiklabs.com/" target="_blank">
+                    <p style="font-size:15px;  font-weight: 600; color: #222222;" class="flinks-2">QWIKLABS</p>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
