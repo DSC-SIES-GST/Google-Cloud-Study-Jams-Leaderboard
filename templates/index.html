@@ -123,6 +123,51 @@
         }
 
         /* footer styling ends here */
+
+        /* Media query for mobile devices */
+        @media screen and (max-width: 498px) {
+            .heading_text {
+                font-size: 23px;
+            }
+        }
+
+        @media screen and (max-width: 467px) {
+            .heading_text {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            .heading_image {
+                height: 60px !important;
+            }
+        }
+
+        @media screen and (max-width: 397px) {
+            .heading_image {
+                height: 50px !important;
+            }
+        }
+
+        @media screen and (max-width: 381px) {
+            .heading_image {
+                height: 40px !important;
+            }
+
+            .heading_text {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 319px) {
+            .heading_image {
+                height: 40px !important;
+            }
+
+            .heading_text {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
@@ -177,11 +222,19 @@
 
         <!-- heading of page placed above the table -->
 
-        <h2 class="mt-5">
-            <img src="../static/images/angular_bracket-1.png" style="height: 35px;" alt="">
+        <h2 class="mt-5 d-flex justify-content-center align-items-center heading_text">
+            <img src="../static/images/angular_bracket-1.png" class="heading_image"
+                style="height: 80px; margin: 8px 10px 0 10px;" alt="">
             30 Days of Google Cloud Leaderboard
-            <img src="../static/images/angular_bracket-2.png" style="height: 35px;" alt="">
+            <img src="../static/images/angular_bracket-2.png" class="heading_image"
+                style="height: 80px; margin: 8px 10px 0 10px;" alt="">
         </h2>
+        <p class="mt-2">
+            <strong>
+                Last Update on:
+            </strong>
+            5/10/2021 12:00:00 p.m. IST
+        </p>
 
         <!-- table designing starts here -->
 
@@ -199,11 +252,11 @@
             {% for leader in leaderboard %}
             <tr class="leader-row">
                 <td>
-                    {{ leader.name }}
+                    {{ leader[0] }}
                 </td>
 
                 <td>
-                    {{ leader.tracktotal }}
+                    {{ leader[1] }}
                 </td>
             </tr>
             {% endfor %}

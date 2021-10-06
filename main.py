@@ -1,41 +1,35 @@
 from flask import Flask, app, render_template, request, session, url_for, redirect
 from datetime import timedelta
-import csv
 import pyrebase
+import pandas as pd
+import os
 
 app = Flask(__name__)
 app.permanent_session_lifetime = timedelta(hours=1)
-app.secret_key = ''
+app.secret_key = 'dscsiesgst30daysofgooglecloud'
 
 config = {
-  "apiKey": "",
-  "authDomain": "",
-  "databaseURL": "",
-  "projectId": "",
-  "storageBucket": "",
-  "messagingSenderId": "",
-  "appId": "",
-  "measurementId": ""
+  "apiKey": "AIzaSyDz4k82KSOGZAM6xdoOA7DZ9FMGkj5Q2UI",
+  "authDomain": "daysofcloud-d8428.firebaseapp.com",
+  "databaseURL": "https://daysofcloud-d8428-default-rtdb.firebaseio.com",
+  "projectId": "daysofcloud-d8428",
+  "storageBucket": "daysofcloud-d8428.appspot.com",
+  "messagingSenderId": "824714996975",
+  "appId": "1:824714996975:web:402f8e0198bc0f3423ff1a",
+  "measurementId": "G-GXWZPTPQDG"
 }
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+
 @app.route("/")
 def index():
     if "uname" in session:
-        with open('mycsv.csv') as csv_file:
-            data = csv.reader(csv_file, delimiter=',')
-            first_line = True
-            leaderboard = []
-            for row in data:
-                if not first_line:
-                    leaderboard.append({
-                        "name": row[0],
-                        "tracktotal": int(row[1])
-                    })
-                else:
-                    first_line = False
-        leaderboard.sort(key=lambda x: x['tracktotal'], reverse=True)
+        my_csv = os.path.join(THIS_FOLDER, 'mycsv.csv')
+        leaderboard = pd.read_csv(my_csv)
+        leaderboard = leaderboard.sort_values(by=['Total'], ascending=False)
+        leaderboard = leaderboard.values.tolist()
         return render_template("index.html", leaderboard=leaderboard)
     else:
         return redirect(url_for('login'))
@@ -56,11 +50,12 @@ def login():
             except:
                 return render_template("login.html", unsuccesful="Invalid Credentials")
         return render_template("login.html")
-    
+
 @app.route('/logout')
 def logout():
     session.pop('uname', None)
     return redirect(url_for('login'))
+
 
 if __name__ == "__main__":
     app.run()
