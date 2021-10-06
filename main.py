@@ -5,17 +5,17 @@ import pyrebase
 
 app = Flask(__name__)
 app.permanent_session_lifetime = timedelta(hours=1)
-app.secret_key = 'dscsiesgst30daysofgooglecloud'
+app.secret_key = ''
 
 config = {
-  "apiKey": "AIzaSyDz4k82KSOGZAM6xdoOA7DZ9FMGkj5Q2UI",
-  "authDomain": "daysofcloud-d8428.firebaseapp.com",
-  "databaseURL": "https://daysofcloud-d8428-default-rtdb.firebaseio.com",
-  "projectId": "daysofcloud-d8428",
-  "storageBucket": "daysofcloud-d8428.appspot.com",
-  "messagingSenderId": "824714996975",
-  "appId": "1:824714996975:web:402f8e0198bc0f3423ff1a",
-  "measurementId": "G-GXWZPTPQDG"
+  "apiKey": "",
+  "authDomain": "",
+  "databaseURL": "",
+  "projectId": "",
+  "storageBucket": "",
+  "messagingSenderId": "",
+  "appId": "",
+  "measurementId": ""
 }
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
