@@ -74,7 +74,7 @@ See the difference between a quest & a skill badge [here](http://services.google
 - Note down the configuration details of your app and then click on the "Continue to the console" button.
 <img src="./screenshots/14.firebaseWebAppConfiguration.png"><br>
 - Click on "Authentication" in the left side of the screen.
-<img src="./screenshots/15.firebaseAuthentication.png"><br>
+<br><img src="./screenshots/15.firebaseAuthentication.png"><br>
 - Click on the "Get Started" button.
 <img src="screenshots/16.firebaseAuthenticationStart.png"><br>
 - Click on the "Email/Password" button.
