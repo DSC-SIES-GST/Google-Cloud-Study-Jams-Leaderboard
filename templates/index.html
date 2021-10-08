@@ -233,7 +233,13 @@
             <strong>
                 Last Update on:
             </strong>
-            5/10/2021 12:00:00 p.m. IST
+            8/10/2021 1:00:00 p.m. IST
+        </p>
+        <p class="mt-2">
+            👑 - Completed both the tracks
+        </p>
+        <p class="mt-2">
+            🏆 - Completed one track
         </p>
 
         <!-- table designing starts here -->
@@ -251,12 +257,21 @@
 
             {% for leader in leaderboard %}
             <tr class="leader-row">
-                <td>
-                    {{ leader[0] }}
-                </td>
 
                 <td>
-                    {{ leader[1] }}
+                    {{ leader[0] }}
+                    {% if leader[3] == 12 %}
+                    👑
+                    {% elif leader[1] == 6 or leader[2] == 6 %}
+                    🏆
+                    {% endif %}
+                </td>
+                <td>
+                    {% if leader[1] == 6 or leader[2] == 6 %}
+                    {{ leader[3]-1 }}
+                    {% else %}
+                    {{ leader[3] }}
+                    {% endif %}
                 </td>
             </tr>
             {% endfor %}
@@ -282,7 +297,15 @@
                 <a class="nav-link active flinks" href="https://www.qwiklabs.com/" target="_blank">
                     <p style="font-size:15px;  font-weight: 600; color: seashell;" class="flinks-2">QWIKLABS</p>
                 </a>
-
+            </div>
+            <div class="pt-4 text-center">
+                <h6>
+                    Developed with ❤️ by
+                    <a href="https://gdsc.community.dev/sies-graduate-school-of-technology-navi-mumbai/"
+                        style="color: #fff !important;">
+                        DSC SIESGST
+                    </a>
+                </h6>
             </div>
         </div>
     </footer>
