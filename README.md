@@ -112,7 +112,7 @@ See the difference between a quest & a skill badge [here](http://services.google
     - Password
 - Save the excel sheet as ```student_authentication.csv```
 - Sample output of the csv file:
-<img src="./screenshots/21.studentAuthenticationCSV.png"><br>
+<br><img src="./screenshots/21.studentAuthenticationCSV.png"><br>
 - Open ```addUsers.py``` and add firebase credentials generated from the Firebase console previously on <b>Line 5 to 14</b>
 - Ensure that you have installed [Python](https://www.python.org/downloads/) on your machine.
 - Run the following commands in the command prompt in the same directory as this cloned repository, to install the required libraries:
