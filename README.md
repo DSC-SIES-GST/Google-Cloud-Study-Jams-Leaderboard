@@ -183,4 +183,13 @@ See the difference between a quest & a skill badge [here](http://services.google
 - Click on the "Logout" button to logout.
 
 
-## Your leaderboard is ready! Share it with your participants along with the instructions including the email ID and password to get the leaderboard.
+### Your leaderboard is ready! Share it with your participants along with the instructions including the email ID and password to get the leaderboard.
+
+## Maintenence
+### Adding new student authentication
+- Open Authentication from the left navigation bar.<br>
+<img src="./screenshots/15.firebaseAuthentication.png"><br>
+- Click on "Add User" button.
+<img src="./screenshots/24.addUser.png"><br>
+- Enter the email ID and password for the new user(s)
+<img src="./screenshots/25.addUserConfirm.png"><br>
