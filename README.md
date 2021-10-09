@@ -193,3 +193,5 @@ See the difference between a quest & a skill badge [here](http://services.google
 <img src="./screenshots/24.addUser.png"><br>
 - Enter the email ID and password for the new user(s)
 <img src="./screenshots/25.addUserConfirm.png"><br>
+- Verify that the user(s) is/are added to the table.
+<img src="./screenshots/26.verifyUser.png"><br>
