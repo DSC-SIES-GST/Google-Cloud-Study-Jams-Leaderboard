@@ -24,7 +24,7 @@ Developed with ❤️ by [DSC SIESGST](https://gdsc.community.dev/sies-graduate-
     - [Repository Setup](#repository-setup)
     - [Pythonanywhere account setup](#pythonanywhere-account-setup)
     - [Uploading custom files for deployment](#uploading-custom-files-for-deployment)
-- [Maintenence](#maintenence)
+- [Maintenance](#maintenance)
     - [Adding new student authentication](#adding-new-student-authentication)
     - [Updating the leaderboard](#updating-the-leaderboard)
 
@@ -65,38 +65,38 @@ See the difference between a quest & a skill badge [here](http://services.google
 #### Creating a Firebase project
 - Open the [Firebase Console](https://console.firebase.google.com/).
 - Click on the "Create a project" or the "Add Project" button.
-<img src="./screenshots/1.firebaseProjectCreate1.png"><br>
-<img src="./screenshots/2.firebaseProjectCreate2.png"><br>
+<img src="./screenshots/project_setup/1.firebaseProjectCreate1.png"><br>
+<img src="./screenshots/project_setup/2.firebaseProjectCreate2.png"><br>
 - Enter a name for your project, accept the [Firebase Terms](https://firebase.google.com/terms) and click on the "Create" button.
-<img src="./screenshots/3.firebaseProjectName.png"><br>
+<img src="./screenshots/project_setup/3.firebaseProjectName.png"><br>
 - Enable Google Analytics for your project (Recommended) and click on the "Continue" button.
-<img src="./screenshots/4.firebaseProjectAnalytics.png"><br>
+<img src="./screenshots/project_setup/4.firebaseProjectAnalytics.png"><br>
 - Select the Analytics location, accept the [Google Analytics Terms](https://www.google.com/analytics/terms/us.html) and click on the "Create Project" button.
-<img src="./screenshots/5.firebaseProjectAnalyticsLocation.png"><br>
+<img src="./screenshots/project_setup/5.firebaseProjectAnalyticsLocation.png"><br>
 -  Wait for the project to be created and then click on the "Continue" button once the project is created.
-<img src="./screenshots/6.firebaseProjectCreated.png"><br>
+<img src="./screenshots/project_setup/6.firebaseProjectCreated.png"><br>
 
 #### Creating a Firebase Realtime Database
 - Click on the "Build" tab in the left side of the screen and then click on "Realtime Database".
-<img src="./screenshots/7.firebaseRealtimeDatabase.png"><br>
+<img src="./screenshots/project_setup/7.firebaseRealtimeDatabase.png"><br>
 - Click on the "Create Database" button.
-<img src="./screenshots/8.firebaseRealtimeDatabaseCreate.png"><br>
+<img src="./screenshots/project_setup/8.firebaseRealtimeDatabaseCreate.png"><br>
 - Select the location of the database and click on the "Next" button.
-<img src="./screenshots/9.firebaseRealtimeDatabaseLocation.png"><br>
+<img src="./screenshots/project_setup/9.firebaseRealtimeDatabaseLocation.png"><br>
 - Choose "Start in test mode" and click on the "Enable" button.
-<img src="./screenshots/10.firebaseRealtimeDatabaseMode.png"><br>
+<img src="./screenshots/project_setup/10.firebaseRealtimeDatabaseMode.png"><br>
 
 #### Adding Firebase to our app
 - Click on "Project Overview" in the left side of the screen to return to home screen.
-<img src="./screenshots/11.firebaseProjectOverview.png"><br>
+<img src="./screenshots/project_setup/11.firebaseProjectOverview.png"><br>
 - Click on the "</>" button to create a Web App.
-<img src="./screenshots/12.firebaseWebApp.png"><br>
+<img src="./screenshots/project_setup/12.firebaseWebApp.png"><br>
 - Give your app a name and click on the "Register app" button.
-<img src="./screenshots/13.firebaseWebAppName.png"><br>
+<img src="./screenshots/project_setup/13.firebaseWebAppName.png"><br>
 - Note down the configuration details of your app and then click on the "Continue to the console" button.
-<img src="./screenshots/14.firebaseWebAppConfiguration.png"><br>
+<img src="./screenshots/project_setup/14.firebaseWebAppConfiguration.png"><br>
 - Click on "Authentication" in the left side of the screen.
-<br><img src="./screenshots/15.firebaseAuthentication.png"><br>
+<br><img src="./screenshots/project_setup/15.firebaseAuthentication.png"><br>
 - Click on the "Get Started" button.
 <img src="screenshots/16.firebaseAuthenticationStart.png"><br>
 - Click on the "Email/Password" button.
@@ -127,14 +127,14 @@ See the difference between a quest & a skill badge [here](http://services.google
     - Type of characters to use
     - Each string should be unique (like raffle tickets)
 - Click on the "Get Strings" button and copy the generated strings.
-<img src="./screenshots/19.passwordGeneration.png"><br>
-<img src="./screenshots/20.password.png"><br>
+<img src="./screenshots/project_setup/19.passwordGeneration.png"><br>
+<img src="./screenshots/project_setup/20.password.png"><br>
 - Open an excel sheet and paste the generated strings in the following columns:
     - Student Email ID (To be taken from the data you have)
     - Password
 - Save the excel sheet as ```student_authentication.csv```
 - Sample output of the csv file:
-<br><img src="./screenshots/21.studentAuthenticationCSV.png"><br>
+<br><img src="./screenshots/project_setup/21.studentAuthenticationCSV.png"><br>
 - Open ```addUsers.py``` and add firebase credentials generated from the Firebase console previously on <b>Line 5 to 14</b>
 - Ensure that you have installed [Python](https://www.python.org/downloads/) on your machine.
 - Run the following commands in the command prompt in the same directory as this cloned repository, to install the required libraries:
@@ -145,9 +145,9 @@ See the difference between a quest & a skill badge [here](http://services.google
 - Run the script using the following command: ```py addUsers.py```. <span style="color: red;">(It is recommended to run the script for a maximum of 10 student configurations at a time to avoid the time limit of the script. To achieve this, keep only 10 student configurations in the csv file and run the script for each of them.)</style>
 - The script will add the users to the database.
 - Sample output of the script:
-<img src="./screenshots/22.createUsers.png"><br>
+<img src="./screenshots/project_setup/22.createUsers.png"><br>
 - Firebase will automatically create a user with the email ID and password you have provided. Go to Users tab in the Firebase console and check the created users.
-<img src="./screenshots/23.userCheck.png"><br>
+<img src="./screenshots/project_setup/23.userCheck.png"><br>
 - Once all the users are added, we are now ready to deploy the app to the Pythonanywhere server.
 
 ## Deployment
@@ -207,33 +207,33 @@ See the difference between a quest & a skill badge [here](http://services.google
 
 ### Your leaderboard is ready! Share it with your participants along with the instructions including the email ID and password to get the leaderboard.
 
-## Maintenence
+## Maintenance
 ### Adding new student authentication
 - Open Authentication from the left navigation bar.<br>
 <img src="./screenshots/15.firebaseAuthentication.png"><br>
 - Click on "Add User" button.
-<img src="./screenshots/maintenence/1.addUser.png"><br>
+<img src="./screenshots/maintenance/1.addUser.png"><br>
 - Enter the email ID and password for the new user(s)
-<img src="./screenshots/maintenence/2.addUserConfirm.png"><br>
+<img src="./screenshots/maintenance/2.addUserConfirm.png"><br>
 - Verify that the user(s) is/are added to the table.
-<img src="./screenshots/maintenence/3.verifyUser.png"><br>
+<img src="./screenshots/maintenance/3.verifyUser.png"><br>
 
 ### Updating the leaderboard
 - Open the leaderboard csv file received from DSC and just keep the following columns:
     - Student Name
     - \# of Skill Badges Completed in Track 1
     - \# of Skill Badges Completed in Track 2
-<br><img src="./screenshots/maintenence/4.leaderboardCsv.png"><br>
+<br><img src="./screenshots/maintenance/4.leaderboardCsv.png"><br>
 - Create a new column having the title "```Total```" and add the sum of the previous two columns: (```# of Skill Badges Completed in Track 1 + # of Skill Badges Completed in Track 2```)
-<br><img src="./screenshots/maintenence/5.leaderboardCsvTotal.png"><br>
+<br><img src="./screenshots/maintenance/5.leaderboardCsvTotal.png"><br>
 - Save the sheet as a csv file.
-<br><img src="./screenshots/maintenence/6.leaderboardCsvSave.png"><br>
+<br><img src="./screenshots/maintenance/6.leaderboardCsvSave.png"><br>
 - The name of the file should be changed to "```leaderboard.csv```"
-<br><img src="./screenshots/maintenence/7.leaderboardCsvRename.png"><br>
+<br><img src="./screenshots/maintenance/7.leaderboardCsvRename.png"><br>
 - Open the leaderboard csv file in notepad.
-<br><img src="./screenshots/maintenence/8.leaderboardCsvNotepad.png"><br>
+<br><img src="./screenshots/maintenance/8.leaderboardCsvNotepad.png"><br>
 - Open ```leaderboard.csv``` in the pythonanywhere server from Files tab at location ```/home/<your_username>/mysite/leaderboard.csv``` and paste the contents of the ```leaderboard.csv``` file opened in notepad. CLick on the "Save" button.
-<br><img src="./screenshots/maintenence/9.leaderboardCsvUpdate.png"><br>
+<br><img src="./screenshots/maintenance/9.leaderboardCsvUpdate.png"><br>
 - Go back the Web app page and click on the "Reload" button in green box.
 <br><img src="screenshots/deployment/14.reloadDeployment.png"><br>
 - Verify the live updated web app on the link provided (<your_username>.pythonanywhere.com).
