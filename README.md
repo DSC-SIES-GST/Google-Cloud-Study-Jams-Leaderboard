@@ -209,7 +209,7 @@ See the difference between a quest & a skill badge [here](http://services.google
 - The name of the file should be changed to "```leaderboard.csv```"
 <br><img src="./screenshots/maintenence/7.leaderboardCsvRename.png"><br>
 - Open the leaderboard csv file in notepad.
-<br><img src="./screenshots/maintenence/8.leaderboardCsvOpen.png"><br>
+<br><img src="./screenshots/maintenence/8.leaderboardCsvNotepad.png"><br>
 - Open ```leaderboard.csv``` in the pythonanywhere server from Files tab at location ```/home/<your_username>/mysite/leaderboard.csv``` and paste the contents of the ```leaderboard.csv``` file opened in notepad. CLick on the "Save" button.
 <br><img src="./screenshots/maintenence/9.leaderboardCsvUpdate.png"><br>
 - Go back the Web app page and click on the "Reload" button in green box.
