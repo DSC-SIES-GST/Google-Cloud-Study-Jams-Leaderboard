@@ -190,8 +190,28 @@ See the difference between a quest & a skill badge [here](http://services.google
 - Open Authentication from the left navigation bar.<br>
 <img src="./screenshots/15.firebaseAuthentication.png"><br>
 - Click on "Add User" button.
-<img src="./screenshots/24.addUser.png"><br>
+<img src="./screenshots/maintenence/1.addUser.png"><br>
 - Enter the email ID and password for the new user(s)
-<img src="./screenshots/25.addUserConfirm.png"><br>
+<img src="./screenshots/maintenence/2.addUserConfirm.png"><br>
 - Verify that the user(s) is/are added to the table.
-<img src="./screenshots/26.verifyUser.png"><br>
+<img src="./screenshots/maintenence/3.verifyUser.png"><br>
+
+### Updating the leaderboard
+- Open the leaderboard csv file received from DSC and just keep the following columns:
+    - Student Name
+    - \# of Skill Badges Completed in Track 1
+    - \# of Skill Badges Completed in Track 2
+<br><img src="./screenshots/maintenence/4.leaderboardCsv.png"><br>
+- Create a new column having the title "```Total```" and add the sum of the previous two columns: (```# of Skill Badges Completed in Track 1 + # of Skill Badges Completed in Track 2```)
+<br><img src="./screenshots/maintenence/5.leaderboardCsvTotal.png"><br>
+- Save the sheet as a csv file.
+<br><img src="./screenshots/maintenence/6.leaderboardCsvSave.png"><br>
+- The name of the file should be changed to "```leaderboard.csv```"
+<br><img src="./screenshots/maintenence/7.leaderboardCsvRename.png"><br>
+- Open the leaderboard csv file in notepad.
+<br><img src="./screenshots/maintenence/8.leaderboardCsvOpen.png"><br>
+- Open ```leaderboard.csv``` in the pythonanywhere server from Files tab at location ```/home/<your_username>/mysite/leaderboard.csv``` and paste the contents of the ```leaderboard.csv``` file opened in notepad. CLick on the "Save" button.
+<br><img src="./screenshots/maintenence/9.leaderboardCsvUpdate.png"><br>
+- Go back the Web app page and click on the "Reload" button in green box.
+<br><img src="screenshots/deployment/14.reloadDeployment.png"><br>
+- Verify the live updated web app on the link provided (<your_username>.pythonanywhere.com).
