@@ -10,6 +10,7 @@ Developed with ❤️ by [DSC SIESGST](https://gdsc.community.dev/sies-graduate-
     - [Program's Syllabus](#programs-syllabus-tracks)
         - [Track 1: Cloud Engineering Track](#track-1-cloud-engineering-track)
         - [Track 2: Data Science & Machine Learning Track](#track-2-data-science--machine-learning-track)
+- [Project Contributors](#project-contributors)
 - [Project Setup](#project-setup)
     - [Firebase Setup](#firebase-setup)
         - [Creating a Firebase project](#creating-a-firebase-project)
@@ -58,6 +59,13 @@ For convenience, Google has divided the topics above into 2 different tracks - C
 - Skill Badge: [Explore Machine Learning Models with Explainable AI](https://google.qwiklabs.com/quests/126)
 
 See the difference between a quest & a skill badge [here](http://services.google.com/fh/files/emails/diff_quests_skillbadges.png).
+
+## Project Contributors
+- [Anirudh Belwadi](https://github.com/anirudhbelwadi) - DSC SIESGST Chapter Lead
+- [Pallavi Lodhi](https://github.com/pallavi002) - Web & App Dev Lead
+- [Yash Bhoite](https://github.com/yashbhoite) - Web Dev Coordinator
+- [Kartik Sharma](https://github.com/kaaartik) - Web Dev Coordinator
+- [Suchit Deshmukh](https://github.com/suchitd11) - Web Dev Coordinator
 
 ## Project Setup
 
