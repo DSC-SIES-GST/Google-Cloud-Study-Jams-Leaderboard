@@ -7,7 +7,7 @@ Developed with ❤️ by [DSC SIESGST](https://gdsc.community.dev/sies-graduate-
 - [Introduction](#introduction)
     - [What is 30 Days of Google Cloud?](#what-is-30-days-of-google-cloud)
     - [Why should you participate in the program?](#why-should-you-participate-in-the-program)
-    - [Program's Syllabus](#programs-syllabus)
+    - [Program's Syllabus](#programs-syllabus-tracks)
         - [Track 1: Cloud Engineering Track](#track-1-cloud-engineering-track)
         - [Track 2: Data Science & Machine Learning Track](#track-2-data-science--machine-learning-track)
 - [Project Setup](#project-setup)
