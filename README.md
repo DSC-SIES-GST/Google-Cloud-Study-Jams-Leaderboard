@@ -5,8 +5,28 @@ Developed with ❤️ by [DSC SIESGST](https://gdsc.community.dev/sies-graduate-
 ## Table of Contents
     
 - [Introduction](#introduction)
+    - [What is 30 Days of Google Cloud?](#what-is-30-days-of-google-cloud)
+    - [Why should you participate in the program?](#why-should-you-participate-in-the-program)
+    - [Program's Syllabus](#programs-syllabus)
+        - [Track 1: Cloud Engineering Track](#track-1-cloud-engineering-track)
+        - [Track 2: Data Science & Machine Learning Track](#track-2-data-science--machine-learning-track)
 - [Project Setup](#project-setup)
+    - [Firebase Setup](#firebase-setup)
+        - [Creating a Firebase project](#creating-a-firebase-project)
+        - [Creating a Firebase Realtime Database](#creating-a-firebase-realtime-database)
+        - [Adding Firebase to our app](#adding-firebase-to-our-app)
+    - [Download and setup the source code for deployment](#download-and-setup-the-source-code-for-deployment)
+        - [Clone this repository](#clone-this-repository)
+        - [Remove unwanted files and folders](#remove-unwanted-files-and-folders)
+        - [Setup the project](#setup-the-project-with-the-following-steps)
+    - [Authentication Setup](#authentication-setup)
 - [Deployment](#deployment)
+    - [Repository Setup](#repository-setup)
+    - [Pythonanywhere account setup](#pythonanywhere-account-setup)
+    - [Uploading custom files for deployment](#uploading-custom-files-for-deployment)
+- [Maintenence](#maintenence)
+    - [Adding new student authentication](#adding-new-student-authentication)
+    - [Updating the leaderboard](#updating-the-leaderboard)
 
 ## Introduction
  
@@ -40,7 +60,9 @@ For convenience, Google has divided the topics above into 2 different tracks - C
 See the difference between a quest & a skill badge [here](http://services.google.com/fh/files/emails/diff_quests_skillbadges.png).
 
 ## Project Setup
-### Creating a Firebase project
+
+### Firebase Setup
+#### Creating a Firebase project
 - Open the [Firebase Console](https://console.firebase.google.com/).
 - Click on the "Create a project" or the "Add Project" button.
 <img src="./screenshots/1.firebaseProjectCreate1.png"><br>
@@ -54,7 +76,7 @@ See the difference between a quest & a skill badge [here](http://services.google
 -  Wait for the project to be created and then click on the "Continue" button once the project is created.
 <img src="./screenshots/6.firebaseProjectCreated.png"><br>
 
-### Creating a Firebase Realtime Database
+#### Creating a Firebase Realtime Database
 - Click on the "Build" tab in the left side of the screen and then click on "Realtime Database".
 <img src="./screenshots/7.firebaseRealtimeDatabase.png"><br>
 - Click on the "Create Database" button.
@@ -64,7 +86,7 @@ See the difference between a quest & a skill badge [here](http://services.google
 - Choose "Start in test mode" and click on the "Enable" button.
 <img src="./screenshots/10.firebaseRealtimeDatabaseMode.png"><br>
 
-### Adding "Firebase to our app
+#### Adding Firebase to our app
 - Click on "Project Overview" in the left side of the screen to return to home screen.
 <img src="./screenshots/11.firebaseProjectOverview.png"><br>
 - Click on the "</>" button to create a Web App.
@@ -98,7 +120,7 @@ See the difference between a quest & a skill badge [here](http://services.google
     - <b>Line 11</b>: Create a secret key for the application
     - <b>Line 14 to 23</b>: Add firebase credentials generated from the Firebase console previously
 
-### Password generation
+### Authentication Setup
 - Open https://www.random.org/strings/ and select the following options:
     - Number of Random strings
     - Length of each string
@@ -149,17 +171,17 @@ See the difference between a quest & a skill badge [here](http://services.google
 - Dashboard will open after registration. Click on Web to view web apps page.
 <img src="./screenshots/deployment/4.creatingApp1.png"><br>
 - Create a new web app.
-<img src="./screenshots/deployment/5.creatingApp2.png">
-<img src="./screenshots/deployment/6.creatingApp3.png?">
+<img src="./screenshots/deployment/5.creatingApp2.png"><br>
+<img src="./screenshots/deployment/6.creatingApp3.png?"><br>
 - Select Flask Framework.
-<img src="./screenshots/deployment/7.creatingApp4.png">
+<img src="./screenshots/deployment/7.creatingApp4.png"><br>
 - Select Python Version
-<img src="./screenshots/deployment/8.creatingApp5.png">
+<img src="./screenshots/deployment/8.creatingApp5.png"><br>
 - Enter path for flask file (Kept default here).
-<img src="./screenshots/deployment/9.creatingApp6.png">
+<img src="./screenshots/deployment/9.creatingApp6.png"><br>
 - Check the default Flask application live on the link provided (<your_username>.pythonanywhere.com).
-<img src="./screenshots/deployment/10.creatingApp7.png">
-<img src="./screenshots/deployment/11.creatingApp8.JPG">
+<img src="./screenshots/deployment/10.creatingApp7.png"><br>
+<img src="./screenshots/deployment/11.creatingApp8.JPG"><br>
 
 ### Uploading custom files for deployment
 - Click on the "Consoles" button on the top navigation bar.
