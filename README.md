@@ -10,7 +10,9 @@ Developed with ❤️ by [DSC SIESGST](https://gdsc.community.dev/sies-graduate-
     - [Program's Syllabus](#programs-syllabus-tracks)
         - [Track 1: Cloud Engineering Track](#track-1-cloud-engineering-track)
         - [Track 2: Data Science & Machine Learning Track](#track-2-data-science--machine-learning-track)
-- [Project Contributors](#project-contributors)
+- [Project Details](#project-details)
+    - [About the Project](#about-the-project)
+    - [Contributors](#contributors)
 - [Project Setup](#project-setup)
     - [Firebase Setup](#firebase-setup)
         - [Creating a Firebase project](#creating-a-firebase-project)
@@ -60,7 +62,12 @@ For convenience, Google has divided the topics above into 2 different tracks - C
 
 See the difference between a quest & a skill badge [here](http://services.google.com/fh/files/emails/diff_quests_skillbadges.png).
 
-## Project Contributors
+## Project Details
+
+### About the Project
+This project is a leaderboard for students participating in the 30 Days of Google Cloud program. 
+
+### Contributors
 - [Anirudh Belwadi](https://github.com/anirudhbelwadi) - DSC SIESGST Chapter Lead
 - [Pallavi Lodhi](https://github.com/pallavi002) - Web & App Dev Lead
 - [Yash Bhoite](https://github.com/yashbhoite) - Web Dev Coordinator
