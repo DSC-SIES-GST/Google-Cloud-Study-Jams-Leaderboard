@@ -3,14 +3,14 @@ import pyrebase
 
 # Configure Firebase project
 config = {
-  "apiKey": "AIzaSyAlhjvfQDcwuCziQGhwAp2qwGrcNAZCSLM",
-  "authDomain": "daysofcloud-292c2.firebaseapp.com",
-  "databaseURL": "https://daysofcloud-292c2-default-rtdb.firebaseio.com",
-  "projectId": "daysofcloud-292c2",
-  "storageBucket": "daysofcloud-292c2.appspot.com",
-  "messagingSenderId": "701838918926",
-  "appId": "1:701838918926:web:ea5c74dd5ad83d3eac035f",
-  "measurementId": "G-WXYF79XWP4"
+  "apiKey": "REPLACE_WITH_ORIGINAL_VALUE",
+  "authDomain": "REPLACE_WITH_ORIGINAL_VALUE",
+  "databaseURL": "REPLACE_WITH_ORIGINAL_VALUE",
+  "projectId": "REPLACE_WITH_ORIGINAL_VALUE",
+  "storageBucket": "REPLACE_WITH_ORIGINAL_VALUE",
+  "messagingSenderId": "REPLACE_WITH_ORIGINAL_VALUE",
+  "appId": "REPLACE_WITH_ORIGINAL_VALUE",
+  "measurementId": "REPLACE_WITH_ORIGINAL_VALUE"
 }
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
