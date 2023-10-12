@@ -4,6 +4,7 @@ README.md
 .env
 leaderboard.csv
 student_authentication.csv
+addusers.py
 
 # .env file format
 # API_KEY = 
