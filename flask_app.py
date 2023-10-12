@@ -24,7 +24,7 @@ config = {
   "appId": os.environ.get('APP_ID'),
   "measurementId": os.environ.get('MEASUREMENT_ID')
 }
-print(config)
+# print(config)
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 
@@ -56,7 +56,7 @@ def login():
                 return redirect(url_for('index'))
             except:
                 return render_template("login.html", unsuccesful="Invalid Credentials")
-        return render_template("index.html")
+        return render_template("login.html")
 
 @app.route('/logout')
 def logout():
