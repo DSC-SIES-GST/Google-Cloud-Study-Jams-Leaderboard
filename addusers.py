@@ -1,17 +1,22 @@
 import pandas as pd
 import pyrebase
+import os
 
+from dotenv import load_dotenv
+
+load_dotenv()
 # Configure Firebase project
 config = {
-  "apiKey": "REPLACE_WITH_ORIGINAL_VALUE",
-  "authDomain": "REPLACE_WITH_ORIGINAL_VALUE",
-  "databaseURL": "REPLACE_WITH_ORIGINAL_VALUE",
-  "projectId": "REPLACE_WITH_ORIGINAL_VALUE",
-  "storageBucket": "REPLACE_WITH_ORIGINAL_VALUE",
-  "messagingSenderId": "REPLACE_WITH_ORIGINAL_VALUE",
-  "appId": "REPLACE_WITH_ORIGINAL_VALUE",
-  "measurementId": "REPLACE_WITH_ORIGINAL_VALUE"
+  "apiKey": os.getenv('API_KEY'),
+  "authDomain": os.environ.get('AUTH_DOMAIN'),
+  "databaseURL": os.environ.get('DATABASE_URL'),
+  "projectId": os.environ.get('PROJECT_ID'),
+  "storageBucket": os.environ.get('STORAGE_BUCKET'),
+  "messagingSenderId": os.environ.get('MESSAGING_SENDER_ID'),
+  "appId": os.environ.get('APP_ID'),
+  "measurementId": os.environ.get('MEASUREMENT_ID')
 }
+# print(config)
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 
