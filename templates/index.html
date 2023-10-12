@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSC SIES GST - 30 Days of Google Cloud Leaderboard</title>
+    <title>GDSC SIES GST - Google Cloud Study Jams</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="../static/images/dsc_siesgst_logo.png">
+    <link rel="shortcut icon" href="../static/images/logo.jpg">
 
     <style>
         /* styling for body starts here */
@@ -19,14 +19,14 @@
         }
 
         /* navbar icons styling */
-
-        .socialmedia img {
-            filter: grayscale(100);
+        .navbar-brand {
+            font-size: 22px;
+            font-weight: 600;
         }
 
-        .socialmedia img:hover {
-            filter: grayscale(0);
-            transition: 0.5s;
+        .navbar-brand img {
+            border-radius: 50%;
+            margin-right: 5px;
         }
 
         /* navbar icons styling ends */
@@ -179,8 +179,8 @@
 
             <!-- this contains logo and button design -->
             <a class="navbar-brand" href="#">
-                <img src="../static/images/dsc_siesgst_logo.png" height="45" alt="">
-                DSC SIES GST
+                <img src="../static/images/logo.jpg" height="45" alt="">
+                GDSC SIES GST
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -225,7 +225,7 @@
         <h2 class="mt-5 d-flex justify-content-center align-items-center heading_text">
             <img src="../static/images/angular_bracket-1.png" class="heading_image"
                 style="height: 80px; margin: 8px 10px 0 10px;" alt="">
-            30 Days of Google Cloud Leaderboard
+            Google Cloud Study Jams Leaderboard
             <img src="../static/images/angular_bracket-2.png" class="heading_image"
                 style="height: 80px; margin: 8px 10px 0 10px;" alt="">
         </h2>
@@ -233,14 +233,14 @@
             <strong>
                 Last Update on:
             </strong>
-            8/10/2021 1:00:00 p.m. IST
+            12/10/2023 19:16:00 p.m. IST
         </p>
-        <p class="mt-2">
+        <!-- <p class="mt-2">
             👑 - Completed both the tracks
         </p>
         <p class="mt-2">
             🏆 - Completed one track
-        </p>
+        </p> -->
 
         <!-- table designing starts here -->
 
@@ -260,18 +260,20 @@
 
                 <td>
                     {{ leader[0] }}
-                    {% if leader[3] == 12 %}
+                    {% if leader[1] == 9 %}
                     👑
-                    {% elif leader[1] == 6 or leader[2] == 6 %}
+                    {% elif leader[1] < 9 and leader[1] >= 6 %}
                     🏆
                     {% endif %}
                 </td>
                 <td>
-                    {% if leader[1] == 6 or leader[2] == 6 %}
-                    {{ leader[3]-1 }}
+                    {{ leader[1] }}
+
+                    <!-- {% if leader[1] == 6 or leader[2] == 6 %}
+                    {{ leader[3] }}
                     {% else %}
                     {{ leader[3] }}
-                    {% endif %}
+                    {% endif %} -->
                 </td>
             </tr>
             {% endfor %}
@@ -303,7 +305,7 @@
                     Developed with ❤️ by
                     <a href="https://gdsc.community.dev/sies-graduate-school-of-technology-navi-mumbai/"
                         style="color: #fff !important;">
-                        DSC SIESGST
+                        GDSC SIESGST
                     </a>
                 </h6>
             </div>
